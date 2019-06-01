@@ -4,13 +4,13 @@
   * @since 1.0.0
   * @author  Dip Bhattacharjee <dip686@gmail.com>
  */
+import { INTERFACE, SERIALIZABLE } from '../.internal/constants/class-interface-literals';
+import InterfaceInstantiationError from '../.internal/exceptions/interface-instantiaion-error';
 /**
   * @interface  
   * @classdesc Serializability of a class is enabled by the class implementing the
   * Serializable interface.
  */
-import { INTERFACE, SERIALIZABLE } from '../.internal/constants/class-interface-literals';
-import InterfaceInstantiationError from '../.internal/exceptions/interface-instantiaion-error';
 class Serializable {
   /**
    * @constructor

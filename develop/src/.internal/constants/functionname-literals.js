@@ -4,7 +4,7 @@
  * @default
  * @exports ADD as a string
  */
-export var ADD = 'add';
+export const ADD = 'add';
 
 /**
  * @constant ADDALL
@@ -12,7 +12,7 @@ export var ADD = 'add';
  * @default
  * @exports ADDALL as a string
  */
-export var ADDALL = 'addAll';
+export const ADDALL = 'addAll';
 
 /**
  * @constant CLEAR
@@ -20,7 +20,7 @@ export var ADDALL = 'addAll';
  * @default
  * @exports CLEAR as a string
  */
-export var CLEAR = 'clear';
+export const CLEAR = 'clear';
 
 /**
  * @constant CONTAINS
@@ -28,7 +28,7 @@ export var CLEAR = 'clear';
  * @default
  * @exports CONTAINS as a string
  */
-export var CONTAINS = 'contains';
+export const CONTAINS = 'contains';
 
 /**
  * @constant CONTAINSALL
@@ -36,7 +36,7 @@ export var CONTAINS = 'contains';
  * @default
  * @exports CONTAINSALL as a string
  */
-export var CONTAINSALL = 'containsAll';
+export const CONTAINSALL = 'containsAll';
 
 /**
  * @constant EQUALS
@@ -44,7 +44,7 @@ export var CONTAINSALL = 'containsAll';
  * @default
  * @exports EQUALS as a string
  */
-export var EQUALS = 'equals';
+export const EQUALS = 'equals';
 
 /**
  * @constant HASHCODE
@@ -52,7 +52,7 @@ export var EQUALS = 'equals';
  * @default
  * @exports HASHCODE as a string
  */
-export var HASHCODE = 'hashCode';
+export const HASHCODE = 'hashCode';
 
 /**
  * @constant ISEMPTY
@@ -60,7 +60,7 @@ export var HASHCODE = 'hashCode';
  * @default
  * @exports ISEMPTY as a string
  */
-export var ISEMPTY = 'isEmpty';
+export const ISEMPTY = 'isEmpty';
 
 /**
  * @constant ITERATOR
@@ -68,7 +68,7 @@ export var ISEMPTY = 'isEmpty';
  * @default
  * @exports ITERATOR as a string
  */
-export var ITERATOR = 'iterator';
+export const ITERATOR = 'iterator';
 
 /**
  * @constant REMOVE
@@ -76,7 +76,7 @@ export var ITERATOR = 'iterator';
  * @default
  * @exports REMOVE as a string
  */
-export var REMOVE = 'remove';
+export const REMOVE = 'remove';
 
 /**
  * @constant REMOVEALL
@@ -84,7 +84,7 @@ export var REMOVE = 'remove';
  * @default
  * @exports REMOVEALL as a string
  */
-export var REMOVEALL = 'removeAll';
+export const REMOVEALL = 'removeAll';
 
 /**
  * @constant RETAINALL
@@ -92,7 +92,7 @@ export var REMOVEALL = 'removeAll';
  * @default
  * @exports RETAINALL as a string
  */
-export var RETAINALL = 'retainAll';
+export const RETAINALL = 'retainAll';
 
 /**
  * @constant SIZE
@@ -100,7 +100,7 @@ export var RETAINALL = 'retainAll';
  * @default
  * @exports SIZE as a string
  */
-export var SIZE = 'size';
+export const SIZE = 'size';
 
 /**
  * @constant TOARRAY
@@ -108,7 +108,7 @@ export var SIZE = 'size';
  * @default
  * @exports TOARRAY as a string
  */
-export var ITERATOR = 'toArray';
+export const ITERATOR = 'toArray';
 
  
 
