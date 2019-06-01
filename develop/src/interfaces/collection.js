@@ -20,7 +20,7 @@ import {
   RETAINALL,
   SIZE,
   TOARRAY
-} from "../.internal/constants/functionname-literals";
+} from "../.internal/constants/function-name-literals";
 import {
   COLLECTION,
   INTERFACE
