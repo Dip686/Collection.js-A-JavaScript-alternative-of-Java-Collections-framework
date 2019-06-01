@@ -211,4 +211,17 @@ export default class AbstractCollection {
     stringValue +=']';
     return stringValue;
   }
+  /**
+   * @description By this function we are achiving the purpose of implements feature in javascript,this will return name
+   * of all the functions that need to be overridden. All the complete classes that inherits it or falls in the inheritance hierarchy
+   * contains a function call in their constructors' named implements. That verifies all the functions are defined successfully or not.
+   * Else thorws classNotDefined Error.
+   * @returns {Array} Array containing name of the functions declared in this interface, needs to be defined
+   */
+  static getListOfUnimplementedMethods() {
+    return [
+      ITERATOR,
+      SIZE
+    ];
+  }
 }
