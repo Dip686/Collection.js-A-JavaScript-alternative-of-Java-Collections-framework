@@ -2,37 +2,36 @@
  * @license Apache-2.0
  * @version 1.0.0
  * @since 1.0.0
- * @author  Dip Bhattacharjee <dip686@gmail.com>
+ * @author Sourav Debnath <sourav2012d@gmail.com>
  */
 import {
   INTERFACE,
-  SERIALIZABLE
+  ITERABLE
 } from "../.internal/constants/class-interface-literals";
 import InterfaceInstantiationError from "../.internal/exceptions/interface-instantiaion-error";
 /**
  * @interface
- * @classdesc Serializability of a class is enabled by the class implementing the
- * Serializable interface.
+ * @classdesc Implementing this interface allows an object to be the target of the "for-each loop" statement
  */
-export default class Serializable {
+export default class Iterable {
   /**
    * @constructor
    */
   constructor() {
-    InterfaceInstantiationError(SERIALIZABLE);
+    InterfaceInstantiationError(ITERABLE);
   }
   /**
-   * @description This function is a sends type of the interface
+   * @description This function sends the type of the interface
    * @returns {string} returns type as interface
    */
   getType() {
     return INTERFACE;
   }
   /**
-   * @description This function is a sends name of the interface
+   * @description This function sends the name of the interface
    * @returns {string} returns name as interface
    */
   getName() {
-    return SERIALIZABLE;
+    return ITERABLE;
   }
 }

@@ -1,17 +1,31 @@
 /**
+ * @constant CLONEABLE
+ * @type {string}
+ * @default
+ * @exports CLONEABLE as a string
+ */
+export const CLONEABLE = "Cloneable";
+/**
  * @constant INTERFACE
  * @type {string}
  * @default
  * @exports INTERFACE as a string
  */
-export var INTERFACE = 'interface';
+export const INTERFACE = "interface";
+/**
+ * @constant ITERABLE
+ * @type {string}
+ * @default
+ * @exports INTERFACE as a string
+ */
+export const ITERABLE = "Iterable";
 /**
  * @constant SERIALIZABLE
  * @type {string}
  * @default
  * @exports SERIALIZABLE as a string
  */
-export var SERIALIZABLE = 'Serializable';
+export const SERIALIZABLE = "Serializable";
 
 /**
  * @constant COLLECTION
@@ -19,4 +33,4 @@ export var SERIALIZABLE = 'Serializable';
  * @default
  * @exports COLLECTION as a string
  */
-export var COLLECTION = 'Collection';
+export const COLLECTION = "Collection";

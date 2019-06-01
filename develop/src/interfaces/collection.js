@@ -1,4 +1,3 @@
-
 /**
  * @license Apache-2.0
  * @version 1.0.0
@@ -6,12 +5,30 @@
  * @author Dip Bhattacharjee <dip686@gmail.com>
  */
 
-import { ADD, ADDALL, CLEAR, CONTAINS, CONTAINSALL, EQUALS, HASHCODE, ISEMPTY, ITERATOR, REMOVE, REMOVEALL, RETAINALL, SIZE, TOARRAY } from '../.internal/constants/functionname-literals';
-import { COLLECTION, INTERFACE } from '../.internal/constants/class-interface-literals';
-import overRideFunctionDeclaration from  '../.internal/exceptions/override-function-declaration';
-import InterfaceInstantiationError from  '../.internal/exceptions/interface-instantiaion-error';
+import {
+  ADD,
+  ADDALL,
+  CLEAR,
+  CONTAINS,
+  CONTAINSALL,
+  EQUALS,
+  HASHCODE,
+  ISEMPTY,
+  ITERATOR,
+  REMOVE,
+  REMOVEALL,
+  RETAINALL,
+  SIZE,
+  TOARRAY
+} from "../.internal/constants/functionname-literals";
+import {
+  COLLECTION,
+  INTERFACE
+} from "../.internal/constants/class-interface-literals";
+import overRideFunctionDeclaration from "../.internal/exceptions/override-function-declaration";
+import InterfaceInstantiationError from "../.internal/exceptions/interface-instantiaion-error";
 
- /**
+/**
  * @interface
  * @classdesc  The root interface in the <i>collection hierarchy</i>.  A collection
  * represents a group of objects, known as its <i>elements</i>.  Some
@@ -24,39 +41,39 @@ import InterfaceInstantiationError from  '../.internal/exceptions/interface-inst
  * @todo Need to define few other defined functions
  * @see https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
  */
-class Collection {
+export default class Collection {
   /**
    * @constructor
    */
-  constructor () {
+  constructor() {
     InterfaceInstantiationError(COLLECTION);
   }
   /**
    * @description This function is a sends type of the interface
    * @returns {string} returns type as interface
    */
-  getType () {
+  getType() {
     return INTERFACE;
   }
   /**
    * @description This function is a sends name of the interface
    * @returns {string} returns name as interface
    */
-  getName () {
+  getName() {
     return COLLECTION;
   }
   /**
    * @description Returns the number of elements in this collection
    * @return the number of elements in this collection
    */
-  size () {
+  size() {
     overRideFunctionDeclaration(SIZE);
   }
   /**
    * @description Returns {@code true} if this collection contains no elements.
    * @return {boolean} if this collection contains no elements
    */
-  isEmpty () {
+  isEmpty() {
     overRideFunctionDeclaration(ISEMPTY);
   }
   /**
@@ -75,49 +92,49 @@ class Collection {
    *
    * @return an {@code Iterator} over the elements in this collection
    */
-  iterator () {
+  iterator() {
     overRideFunctionDeclaration(ITERATOR);
   }
   /**
    * @description Returns an array containing all of the elements in this collection.
    * @return Returns an array containing all of the elements in this collection.
    */
-  toArray () {
+  toArray() {
     overRideFunctionDeclaration(TOARRAY);
   }
   /**
-   * @description Ensures that this collection contains the specified element 
+   * @description Ensures that this collection contains the specified element
    * @return {@code true} if this collection changed as a result of the call
    */
-  add () {
+  add() {
     overRideFunctionDeclaration(ADD);
   }
   /**
    * @description Removes a single instance of the specified element from this
    * @return {@code true} if an element was removed as a result of this call
    */
-  remove () {
+  remove() {
     overRideFunctionDeclaration(REMOVE);
   }
   /**
    * @description Returns {@code true} if this collection contains all of the elements
    * @return {@code true} if this collection contains all of the elements
    */
-  containsAll () {
+  containsAll() {
     overRideFunctionDeclaration(CONTAINSALL);
   }
   /**
    * @description Adds all of the elements in the specified collection to this collection
    * @return {@code true} if this collection changed as a result of the call
    */
-  addAll () {
+  addAll() {
     overRideFunctionDeclaration(ADDALL);
   }
   /**
    * @description Removes all of this collection's elements that are also contained in the specified collection
    * @return {@code true} if this collection changed as a result of the call
    */
-  removeAll () {
+  removeAll() {
     overRideFunctionDeclaration(REMOVEALL);
   }
   /**
@@ -134,21 +151,21 @@ class Collection {
    * Removes all of the elements from this collection (optional operation).
    * The collection will be empty after this method returns.
    */
-  clear () {
+  clear() {
     overRideFunctionDeclaration(CLEAR);
   }
   /**
    * @description Compares the specified object with this collection for equality.
-   * @return {@code true} if the specified object is equal to this collection 
+   * @return {@code true} if the specified object is equal to this collection
    */
-  equals () {
+  equals() {
     overRideFunctionDeclaration(EQUALS);
   }
   /**
-   * @description Returns the hash code value for this collection. 
+   * @description Returns the hash code value for this collection.
    * @return the hash code value for this collection
    */
-  hashCode () {
+  hashCode() {
     overRideFunctionDeclaration(HASHCODE);
   }
   /**
@@ -158,7 +175,22 @@ class Collection {
    * Else thorws classNotDefined Error.
    * @returns {Array} Array containing name of the functions declared in this interface, needs to be defined
    */
-  static getListOfUnimplementedMethods () {
-    return [ADD, ADDALL, CLEAR, CONTAINS, CONTAINSALL, EQUALS, HASHCODE, ISEMPTY, ITERATOR, REMOVE, REMOVEALL, RETAINALL, SIZE, TOARRAY];
+  static getListOfUnimplementedMethods() {
+    return [
+      ADD,
+      ADDALL,
+      CLEAR,
+      CONTAINS,
+      CONTAINSALL,
+      EQUALS,
+      HASHCODE,
+      ISEMPTY,
+      ITERATOR,
+      REMOVE,
+      REMOVEALL,
+      RETAINALL,
+      SIZE,
+      TOARRAY
+    ];
   }
 }
