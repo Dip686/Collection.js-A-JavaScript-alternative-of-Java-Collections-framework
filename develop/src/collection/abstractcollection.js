@@ -23,12 +23,14 @@ import UnsupportedOperationException from '../.internal/exceptions/unsupported-o
 export default class AbstractCollection {
   /**
    * @constructor
+   * @since 1.0.0
    */
   constructor() {
 
   }
   /**
   * @description This function is a sends name of the interface
+  * @since 1.0.0
   * @returns {string} returns name as interface
   */
   getName() {
@@ -36,6 +38,7 @@ export default class AbstractCollection {
   }
   /**
   * @description This function is a sends type of the interface
+  * @since 1.0.0
   * @returns {string} returns type as interface
   */
   getType() {
@@ -61,12 +64,14 @@ export default class AbstractCollection {
   }
   /**
    * @description This function returns {@code true} when the size is 0
+   * @since 1.0.0
    * @returns This function returns {@code true} when the size is 0
    */
   isEmpty() {
     this.size() === 0;
   }
   /**
+   * @since 1.0.0
    * @description Verifies whether the collecion object holds the passed object
    * @param {Object} Obj Obejct passed to check whether Collection contains it or not
    * @return {@code true} if the element is present in the Collection Object
@@ -81,6 +86,7 @@ export default class AbstractCollection {
     return false;
   }
   /**
+  * @since 1.0.0
   * @description This implementation returns an array containing all the elements
   * returned by this collection's instance, in the same order, stored in
   * consecutive elements of the array, starting with index {@code 0}.
@@ -104,6 +110,7 @@ export default class AbstractCollection {
     throw new UnsupportedOperationException(ADD);
   }
   /**
+  * @since 1.0.0
   * @description This implementation iterates over the collection looking for the
   *specified element.  If it finds the element, it removes the element
   * from the collection
@@ -123,6 +130,7 @@ export default class AbstractCollection {
     return false;
   }
   /**
+   * @since 1.0.0
    * @description This function verifies whether the current state holds all the objects passed in the parameter
    * @param {Object} Objs holds list of Objects of dataStore
    * @returns returns {@code true} if The latest state holds all the Objects provided in the List
@@ -136,6 +144,7 @@ export default class AbstractCollection {
     return true;
   }
   /**
+   * @since 1.0.0
    * @description This implementation iterates over the specified collection, and adds each object 
    * @param {Object} Objs holds list of Objects of dataStore
    * @returns returns {@code true} if either element is added successfully
@@ -150,6 +159,7 @@ export default class AbstractCollection {
     return modfied;
   }
   /**
+   * @since 1.0.0
    * @description This implementation iterates over the specified collection, and removes each object 
    * @param {Object} Objs holds list of Objects of dataStore
    * @returns returns {@code true} if either element is removed successfully
@@ -167,6 +177,7 @@ export default class AbstractCollection {
     return modfied;
   }
   /**
+   * @since 1.0.0
    * @description This implementation iterates over the specified collection, and removes rest of the objects 
    * @param {Object} Objs holds list of Objects of dataStore
    * @returns returns {@code true} if either element is removed successfully
@@ -184,6 +195,7 @@ export default class AbstractCollection {
     return modfied;
   }
   /**
+   * @since 1.0.0
    * @description This implementation iterates over the specified collection and removes each of them
    */
   clear() {
@@ -195,6 +207,7 @@ export default class AbstractCollection {
     }
   }
   /**
+   * @since 1.0.0
    * @description Returns a string representation of this collection
    * @returns {String} Returns a string representation of this collection
    */
@@ -212,6 +225,7 @@ export default class AbstractCollection {
     return stringValue;
   }
   /**
+   * @since 1.0.0
    * @description By this function we are achiving the purpose of implements feature in javascript,this will return name
    * of all the functions that need to be overridden. All the complete classes that inherits it or falls in the inheritance hierarchy
    * contains a function call in their constructors' named implements. That verifies all the functions are defined successfully or not.

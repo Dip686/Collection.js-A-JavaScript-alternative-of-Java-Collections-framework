@@ -23,6 +23,14 @@ export const CLONEABLE = "Cloneable";
 export const CLASS = "class";
 
 /**
+ * @constant COLLECTION
+ * @type {string}
+ * @default
+ * @exports COLLECTION as a string
+ */
+export const COLLECTION = "Collection";
+
+/**
  * @constant INTERFACE
  * @type {string}
  * @default
@@ -39,17 +47,18 @@ export const INTERFACE = "interface";
 export const ITERABLE = "Iterable";
 
 /**
+ * @constant SET
+ * @type {string}
+ * @default
+ * @exports SET as a string
+ */
+export const SET = "Set";
+
+
+/**
  * @constant SERIALIZABLE
  * @type {string}
  * @default
  * @exports SERIALIZABLE as a string
  */
 export const SERIALIZABLE = "Serializable";
-
-/**
- * @constant COLLECTION
- * @type {string}
- * @default
- * @exports COLLECTION as a string
- */
-export const COLLECTION = "Collection";
